@@ -9,7 +9,7 @@
 
   <body>
     <header>
-      <a class="header-logo">device</a>
+      <a class="header-logo logo">device</a>
 
       <form class="header-site-search" action="#" method="get">
         <input type="text" placeholder="Поиск по сайту">
@@ -18,7 +18,7 @@
 
       <div class="header-user">
         <div class="header-user-out">
-          <a href="#">Войти</a>
+          <a class="header-user-link user-link" href="#">Войти</a>
         </div>
         <div class="header-user-in">
           <a href="#">Валентин Петухов</a>
@@ -26,9 +26,9 @@
         </div>
       </div>
 
-      <a class="header-compare" href="#">Сравнить</a>
+      <a class="header-compare compare" href="#">Сравнить</a>
 
-      <a class="header-cart" href="#">Корзина</a>
+      <a class="header-cart cart" href="#">Корзина</a>
 
       <div class="header-catalog-goods">
         <a href="#">каталог товаров</a>
@@ -48,11 +48,11 @@
         </div>
       </div>
 
-      <a class="header-delivery" href="#">доставка</a>
+      <a class="header-delivery delivery" href="#">доставка</a>
 
-      <a class="header-guarantee" href="#">гарантия</a>
+      <a class="header-guarantee guarantee" href="#">гарантия</a>
 
-      <a class="header-contacts" href="#" >контакты</a>
+      <a class="header-contacts contacts" href="#" >контакты</a>
 
     </header>
 
@@ -62,13 +62,14 @@
       <section class="slider">
         <h2 class="visually-hidden">Наши акции</h2>
 
+        <input class="visually-hidden" type="radio" name="slider-selector" value="slider-1" id="slider-1">
+        <input class="visually-hidden" type="radio" name="slider-selector" value="slider-2" id="slider-2">
+        <input class="visually-hidden" type="radio" name="slider-selector" value="slider-3" id="slider-3">
+
         <div class="slider-selector">
-          <input class="visually-hidden" type="radio" name="slider-selector" value="slider-1" id="slider-1">
-          <laber for="slider-1"><span class="visually-hidden">слайдер-1</span></laber>
-          <input class="visually-hidden" type="radio" name="slider-selector" value="slider-2" id="slider-2">
-          <laber for="slider-2"><span class="visually-hidden">слайдер-2</span></laber>
-          <input class="visually-hidden" type="radio" name="slider-selector" value="slider-3" id="slider-3">
-          <laber for="slider-3"><span class="visually-hidden">слайдер-3</span></laber>
+          <label for="slider-1"><span class="visually-hidden">слайдер-1</span></label>
+          <label for="slider-2"><span class="visually-hidden">слайдер-2</span></label>
+          <label for="slider-3"><span class="visually-hidden">слайдер-3</span></label>
         </div>
 
         <div class="slider-1">
@@ -121,7 +122,128 @@
             </tr>
           </table>
         </div>
+      </section>
 
+      <section class="catalog-goods">
+        <h2 class="visually-hidden">Катлог товаров</h2>
+        <ul>
+          <li><a href="#">Виртуальная реальность</a></li>
+          <li><a href="#">Монопод для селфи</a></li>
+          <li><a href="#">Экшн-камеры</a></li>
+          <li><a href="#">Фитнес-браслеты</a></li>
+          <li><a href="#">Умные часы</a></li>
+          <li><a href="#">Квадрокоптеры</a></li>
+        </ul>
+      </section>
+
+      <section class="service">
+        <h2 class="visually-hidden">Наши услуги</h2>
+
+        <input class="visually-hidden" type="radio" name="service-switch" value="service-delivery" id="service-delivery">
+        <input class="visually-hidden" type="radio" name="service-switch" value="service-guarantee" id="service-guarantee">
+        <input class="visually-hidden" type="radio" name="service-switch" value="service-credit" id="service-credit">
+
+        <ul class="service-list">
+          <li>
+            <label class="service-switch" for="service-delivery">доставка</label>
+            <div class="service-container">
+              <h3 class="service-title">доставка</h3>
+              <p class="service-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </div>
+          </li>
+          <li>
+            <label class="service-switch" for="service-guarantee">гарантия</label>
+            <div class="service-container">
+              <h3 class="service-title">гарантия</h3>
+              <p class="service-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+            </div>
+          </li>
+          <li>
+            <label class="service-switch" for="service-credit">кредит</label>
+            <div class="service-container">
+              <h3 class="service-title">кредит</h3>
+              <p class="service-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="manufacturer">
+        <h2 class="visually-hidden">Произоводители гаджетов</h2>
+
+        <ul class="manufacturer-list">
+          <li><a href="#"><img src="#" alt=""></a></li>
+          <li><a href="#"><img src="#" alt=""></a></li>
+          <li><a href="#"><img src="#" alt=""></a></li>
+        </ul>
+      </section>
+
+      <div class="about-us-contain">
+        <section class="about-us-delivery">
+          <h2>О нас</h2>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.<br>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями</p>
+          <ul>
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="btn" href="#">подробнее о нас</a>
+        </section>
+
+        <section class="about-us-contacts">
+          <h2>Контакты</h2>
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает</p>
+          <img alt="Наш адрес: улица Строителей, 15" src="">
+          <button class="btn">Напишите нам</button>
+        </section>
+      </div>
+
+
+      <footer>
+        <a class="footer-logo logo">DEVICE</a>
+        <a class="footer-user-link user-link" href="#">Войти</a>
+        <a class="footer-compare compart" href="#">Сравнить</a>
+        <a class="footer-cart cart" href="#">Корзина</a>
+        <p class="footer-address">г. Москва, ул. Строителей, 15</p>
+        <a class="footer-delivery delivery" href="#">доставка</a>
+        <a class="footer-guarantee guarantee" href="#">гарантия</a>
+        <a class="footer-contacts contacts" href="#">контакты</a>
+        <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
+        <div class="footer-social">
+          <ul>
+            <li><a href="#"><span class="visually-hidden">Facebook</span></a></li>
+            <li><a href="#"><span class="visually-hidden">Instagram</span></a></li>
+            <li><a href="#"><span class="visually-hidden">Twitter</span></a></li>
+          </ul>
+        </div>
+        <a href="#"><span class="visually-hidden">HTML Academy</span></a>
+      </footer>
+
+      <section class="modal modal-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <img src="" alt="Наш адрес: улица Строителей, 15">
+      </section>
+
+      <section class="modal modal-letter">
+        <h2 class="visually-hidden">Напишите нам</h2>
+
+        <p>
+          <label for="user-name">Ваше имя:</label>
+          <input type="text" placeholder="Представьтесь, пожалуйста" name="user-name" id="user-name">
+        </p>
+
+        <p>
+          <label for="user-email">Ваш e-mail:</label>
+          <input type="email" placeholder="Для отправки ответа" name="user-email" id="user-email">
+        </p>
+
+        <p>
+          <label for="user-text">Текст письма:</label>
+          <textarea name="user-text" id="user-text" placeholder="В свободной форме"></textarea>
+        </p>
+
+        <button class="btn" type="submit">Отправить</button>
+        <button class="close" type="button"><span class="visually-hidden">Закрыть</span></button>
       </section>
 
     </main>
